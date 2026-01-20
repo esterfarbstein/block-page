@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>דף חסימה</title>
+    <title>Page Unavailable</title>
     <style>
         body {
             margin: 0;
@@ -10,22 +10,39 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f5f5f5;
+            background-color: #f5f7fa;
             font-family: Arial, sans-serif;
             text-align: center;
+            color: #333;
         }
         .box {
             background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 40px 50px;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            max-width: 420px;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+        p {
+            font-size: 16px;
+            margin: 12px 0;
+            color: #555;
+        }
+        .icon {
+            font-size: 48px;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
     <div class="box">
-        <h1>הגישה לאתר נחסמה</h1>
-        <p>אתר זה אינו זמין לפי הגדרות הסינון.</p>
+        <div class="icon">⚠️</div>
+        <h1>Oops! Something went wrong</h1>
+        <p>We couldn’t load this page right now.</p>
+        <p>Please try again later.</p>
     </div>
 </body>
 </html>
